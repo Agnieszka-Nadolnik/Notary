@@ -9,30 +9,31 @@ $(document).ready(function() {
 
 
 //scroll menu
-$(document).on('click', '.text-small a', function(event){
-    event.preventDefault();
-    var hash = this.hash;
-    var link = $(this);
-    var scrollOffset = $(this.hash).offset().top;
+// $(document).on('click', '.text-small a', function(event){
+//     event.preventDefault();
+//     var hash = this.hash;
+//     var link = $(this);
+//     var scrollOffset = $(this.hash).offset().top;
 
-    $(".text-small a").toggleClass('is-active').css("color", "red");
-    $(".header__menu-toggle").toggleClass('is-active');
+//     $(".text-small a").toggleClass('is-active').css("color", "red");
+//     $(".header__menu-toggle").toggleClass('is-active');
 
-    $(".text-small a[href^='#']").css("color", "#959595");
-    $(this).css("color", "#2a3b64");
+//     $(".text-small a[href^='#']").css("color", "#959595");
+//     $(this).css("color", "#2a3b64");
 
+// });
+
+$(".change-color").on('click', function(event){
+  event.preventDefault();
+  $(".container-fluid").toggleClass('dark');
 });
 
+$(".menu-mobile").on('click', function(event){
+  event.preventDefault();
+  $(".mobile-menu-container").toggleClass('active');
+})
 
-//question
-var srcContent = false;
-$(".contact__questions--list li").click(function() {
-  srcContent = !srcContent;
-
-  $(this).find(".list--title p").toggle('slow');
-  $(this).find("img").css("margin-top", srcContent ? 15 : 0).attr("src", srcContent ? "./public/img/icons/minus.svg" : "./public/img/icons/plus.svg");
-});
-
+})
 //animation
 
   // var obj = $(".scroll-animation");

@@ -10,7 +10,7 @@
     }
 }
 
-.oplaty .about {
+.about.grid {
     margin-top: 50px;
     @media #{$size-lg} {
         margin-top: 200px;
@@ -22,18 +22,67 @@
         }
         .empty-container {
             @media #{$size-lg} {
-                width: 50vw;
+                width: 40%;
              }
         }
+    }
 
         .about-prices-content {
-
+            width: 100%;
+            
+            @media #{$size-xl} {
+                display: flex;
+                justify-content: space-between;
+                width: 60%;
+             }
             .about-prices-text {
                 margin-bottom: 50px;
+                @media #{$size-xl} {
+                    display: flex;
+                    max-width: 458px;
+                }
             }
             img {
                 max-width: 100%;
+                @media #{$size-xl} {
+                    display: flex;
+                    width: 458px;
+                 }
             }
         }
     }
-}
+
+    .office .grid {
+        margin-top: 50px;
+        @media #{$size-lg} {
+            margin-top: 50px;
+        }
+
+        .text-medium {
+            display: none;
+            @media #{$size-lg} {
+                display: block;
+            }
+        }
+
+        .header-info-content {
+            margin-top: 80px;
+            @media #{$size-lg} {
+                max-width: 457px;
+            }
+        }
+    }
+
+    .map {
+        margin-top: 70px;
+        border-radius: 26px 26px 0px 0px;
+
+        @media #{$size-lg} {
+            margin-top: 180px;
+         }
+        img {
+            max-width: 100%;
+            display: block;
+        }
+    }
+

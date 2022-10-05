@@ -36,6 +36,24 @@
     }
  }
 
+ .container-fluid.dark {
+  background-color: #306145 !important;
+  color: #E5E5E5 !important;
+
+  a {
+    color: #E5E5E5;
+    text-decoration: none;
+
+    &:hover {
+      color: #E5E5E5;
+    }
+  }
+
+  .change-color {
+    background-color: #E5E5E5 !important;
+  }
+}
+
  .col {
   padding: 0 !important;
  }
