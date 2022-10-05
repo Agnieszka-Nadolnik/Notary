@@ -1,0 +1,19 @@
+.services {
+    margin-top: 100px !important;
+
+    @media #{$size-lg} {
+        margin-top: 200px !important;
+      }
+
+      @media #{$size-xl} {
+        margin-top: 369px;
+      }
+
+      .services-container { 
+        margin-top: 40px;
+
+        @media #{$size-lg} {
+            margin-top: 80px;
+          }
+      }
+}

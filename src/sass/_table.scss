@@ -1,0 +1,40 @@
+.table {
+    display: none;
+
+    @media #{$size-md} {
+        display: table;
+    }
+    thead th {
+        color: #306145;
+    }
+
+    th,
+    td {
+        font-size: 16px;
+        line-height: 20px;
+        letter-spacing: -0.31px;
+        border-bottom: 1px solid #B6B6B6;
+        padding-top: 18px !important;
+        padding-bottom: 18px !important;
+
+        @media #{$size-lg} {
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.48px;
+            padding-top: 28px !important;
+            padding-bottom: 28px !important;
+          }
+    }
+}
+
+.table-mobile {
+    display: table;
+    @media #{$size-lg} {
+        display: none;
+    }
+
+    span {
+        display: block;
+        color: #878787;
+    }
+}

@@ -1,0 +1,99 @@
+#title {
+    font-size: $font-title;
+    letter-spacing: $letter-title;
+    line-height: $line-title;
+    color: $txt-color;
+    font-weight: 600;
+}
+
+#txt {
+    font-size: $font-txt;
+    letter-spacing: $letter-txt;
+    line-height: $line-txt;
+    font-weight: 500;
+}
+
+#logo {
+  color: $default-color;
+  font-family: 'Sofia Pro Semi';
+  letter-spacing: $letter-title;
+  line-height: 49px;
+  font-size: 24px;
+}
+
+.text-small {
+  font-size: 14px;
+  line-height: 16.8px;
+  letter-spacing: 0.1px;
+}
+
+
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 70px 30px;
+
+       @media #{$size-md} {
+        padding: 70px 50px;
+      }
+
+      @media #{$size-lg} {
+        padding: 70px 100px;
+      }
+
+      @media #{$size-xl} {
+        padding: 170px 100px;
+      }
+      @media #{$size-xxl} {
+        padding: 170px 130px;
+      }
+}
+
+
+.section-header-title {
+  font-size: 14px;
+  color: #306145;
+  letter-spacing: -0.31px;
+  line-height: 18px;
+}
+
+.text-content {
+  font-size: 16px;
+  letter-spacing: -0.31px;
+  line-height: 22px;
+
+  @media #{$size-xl} {
+    font-size: 30px;
+    letter-spacing: -0.31px;
+    line-height: 42px;
+  }
+}
+
+.section-header {
+  font-size: 40px;
+  line-height: 48px;
+  letter-spacing: -0.48px;
+
+  @media #{$size-lg} {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  @media #{$size-xl} {
+    font-size: 72px;
+    line-height: 86px;
+  }
+}
+
+.icon {
+  cursor: pointer;
+}
+
+.bordered {
+    padding-bottom: 30px;
+    border-bottom: $border;
+
+    @media #{$size-md} {   
+        padding-bottom: 40px;
+    }
+}

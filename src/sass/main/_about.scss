@@ -1,0 +1,39 @@
+.about {
+    margin-top: 70px;
+
+    @media #{$size-xl} {
+        margin-top: 200px;
+      }
+    .about-header-container {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.oplaty .about {
+    margin-top: 50px;
+    @media #{$size-lg} {
+        margin-top: 200px;
+      }
+
+      .about-prices {
+        @media #{$size-lg} {
+           display: flex;
+        }
+        .empty-container {
+            @media #{$size-lg} {
+                width: 50vw;
+             }
+        }
+
+        .about-prices-content {
+
+            .about-prices-text {
+                margin-bottom: 50px;
+            }
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+}

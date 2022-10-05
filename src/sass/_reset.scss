@@ -1,0 +1,43 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: 'PP Neue Montreal';
+     font-weight: 500;
+ }
+
+ body {
+   overflow-x: hidden;
+ }
+
+ .container {
+  padding: 0 !important;
+  margin: 0 !important;
+  min-width: 100%;
+ }
+
+ .container-fluid {
+     max-width: 100%;
+     background-color: #E5E5E5 !important;
+     color: #212932 !important;
+     padding: 16px !important;
+
+     a {
+      color: #212932;
+      text-decoration: none;
+
+      &:hover {
+        color: #306145;
+      }
+    }
+    
+     li {
+      list-style-type: none;
+    }
+ }
+
+ .col {
+  padding: 0 !important;
+ }
+
+
