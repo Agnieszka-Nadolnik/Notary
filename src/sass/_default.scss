@@ -148,3 +148,30 @@
       margin-top: 200px;
   }
 }
+
+.title-animation {
+  opacity: 0;
+  animation: title-animation 0.7s 0.1s forwards;
+}
+
+.text-animation {
+  opacity: 0;
+  animation: title-animation 0.7s 0.5s forwards;
+}
+
+.number-btn {
+  padding: 14px 27px;
+  border: 1px solid #000000;
+  border-radius: 23px;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: -0.03em;
+  transition: color 0.3s, border-color 0.3s;
+  line-height: 17px;
+  margin-left: 10px;
+
+  &:hover {
+      color: #306145;
+      border-color: #306145;
+  }
+}

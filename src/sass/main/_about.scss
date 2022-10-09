@@ -86,3 +86,22 @@
         }
     }
 
+    .select {
+        @media #{$size-md} {
+            display: flex;
+            justify-content: space-around;
+         }
+        
+        .number-btn {
+            width: 100%;
+            display: block;
+            text-align: center;
+            margin-bottom: 20px;
+            margin-left: 0;
+
+            @media #{$size-md} {
+                width: 250px;
+             }
+        }
+    }
+

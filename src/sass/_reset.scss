@@ -8,6 +8,7 @@
 
  body {
    overflow-x: hidden;
+   background-color: #E5E5E5 !important;
  }
 
  .container {
@@ -18,7 +19,7 @@
 
  .container-fluid {
      max-width: 100%;
-     background-color: #E5E5E5 !important;
+     max-width: 1920px !important;
      color: #212932 !important;
      padding: 16px !important;
 
