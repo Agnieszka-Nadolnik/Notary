@@ -2,13 +2,14 @@
      margin: 0;
      padding: 0;
      box-sizing: border-box;
-     font-family: 'PP Neue Montreal';
+     font-family: 'PP Neue Montreal', 'Arial', sans-serif;
      font-weight: 500;
  }
 
  body {
    overflow-x: hidden;
    background-color: #E5E5E5 !important;
+   font-family: 'PP Neue Montreal';
  }
 
  .container {
@@ -41,6 +42,10 @@
   background-color: #306145 !important;
   color: #E5E5E5 !important;
 
+  .mobile-menu-container {
+    background-color: #306145 !important;
+  }
+
   a {
     color: #E5E5E5;
     text-decoration: none;
@@ -50,9 +55,28 @@
     }
   }
 
+  td,
+  tr,
+  .section-header-title {
+    color: #E5E5E5;
+  }
+
   .change-color {
     background-color: #E5E5E5 !important;
   }
+
+  .number-btn {
+    border-color: #E5E5E5;
+  }
+}
+
+.change-color {
+  width: 20px;
+  height: 20px;
+  background-color: #306145;
+  border-radius: 50%;
+  margin-right: 10px;
+  cursor: pointer;
 }
 
  .col {

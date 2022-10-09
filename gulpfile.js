@@ -5,6 +5,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var prefixer = require('gulp-autoprefixer');
 var gulp = require('gulp');
 var deploy = require('gulp-gh-pages');
+const minify = require('gulp-minify');
 
 
 
@@ -34,6 +35,19 @@ gulp.task("watch", function () {
     gulp.watch("./src/js/**/*.js", gulp.series("jshint"));
 });
 
+
+gulp.task('compress', function() {
+    gulp.src("src/js/*.js")
+      .pipe(minify({
+          ext:{
+              src:'-debug.js',
+              min:'.js'
+          },
+          exclude: ['tasks'],
+          ignoreFiles: ['.combo.js', '-min.js']
+      }))
+      .pipe(gulp.dest('dist'))
+  });
 
 /**
  * Push build to gh-pages

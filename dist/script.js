@@ -1,0 +1,1 @@
+$(document).ready(function(){$(".change-color").on("click",function(e){e.preventDefault(),$(".container-fluid").toggleClass("dark")}),$(".menu-mobile").on("click",function(e){e.preventDefault(),$(".mobile-menu-container").toggleClass("active")})});

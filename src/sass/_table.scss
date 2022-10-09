@@ -13,9 +13,9 @@
         font-size: 16px;
         line-height: 20px;
         letter-spacing: -0.31px;
-        // border-bottom: 1px solid #B6B6B6;
         padding-top: 18px !important;
         padding-bottom: 18px !important;
+        border: none;
 
         @media #{$size-lg} {
             font-size: 18px;
