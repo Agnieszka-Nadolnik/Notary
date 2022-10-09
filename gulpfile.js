@@ -3,8 +3,8 @@ var jshint = require("gulp-jshint");
 var sass = require("gulp-sass");
 var sourcemaps = require('gulp-sourcemaps');
 var prefixer = require('gulp-autoprefixer');
-var gulp        = require('gulp');
-var deploy      = require('gulp-gh-pages');
+var gulp = require('gulp');
+var deploy = require('gulp-gh-pages');
 
 
 

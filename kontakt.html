@@ -63,7 +63,7 @@
                 </div>
             </div>
             <div class="banner bordered">
-                <img class="banner-image" src="./public/img/Kontakt.svg"/>
+                <img class="banner-image title-animation" src="./public/img/Kontakt.svg"/>
             </div>
         </div>
         <main class="about grid">
@@ -89,13 +89,16 @@
                 </div>
             </div>
             <div class="map">
-                <img src="./public/img/map.png" alt="Map"/>
+                <!-- <img src="./public/img/map.png" alt="Map"/> -->
+                <!-- <div class="mapouter"><div class="gmap_canvas"><iframe width="1080" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Krak%C3%B3w%20urz%C4%99dnicza%2047&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://fmovies-online.net"></a><br><style>.mapouter{position:relative;text-align:right;height:500px;width:1080px;}</style><a href="https://www.embedgooglemap.net">google maps code</a><style>.gmap_canvas {overflow:hidden;background:none!important;height:200px;width:100vw;}</style></div></div> -->
+                <!-- <div id="main-contact__map" class="main-contact__map"></div> -->
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.7874445044276!2d19.9173373159224!3d50.071542222474946!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47165b15d263845d%3A0x351da2f6e8d1ca50!2sUrz%C4%99dnicza%2047%2C%2030-048%20Krak%C3%B3w!5e0!3m2!1spl!2spl!4v1665126222360!5m2!1spl!2spl" width="1910" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
             </div>
         </main>
         <footer class="container footer">
             <div class="footer-media">
-                <a href ="mailto: biuro@notariuszmagdziarz.pl">biuro@notariuszmagdziarz.pl</a>
-                <a href="tel:122952772">12 259 27 72</a>
+                <a href ="mailto: biuro@notariuszmagdziarz.pl"  data-aos="fade-up" data-aos-duration="1000">biuro@notariuszmagdziarz.pl</a>
+                <a href="tel:122952772"  data-aos="fade-up" data-aos-duration="1000">12 259 27 72</a>
             </div>
             <div class="footer-nav">
                 <table class="table table-mobile">
@@ -120,11 +123,22 @@
                 </table>
                 <div class="footer-welcome">
                     <p class="section-header-title">Odwiedź nas</p>
-                    <p class="section-header">ul. Urzędnicza 47/7</p>
+                    <p class="section-header"  data-aos="fade-up" data-aos-duration="1000">ul. Urzędnicza 47/7</p>
                 </div>
             </div>
         </footer>
     </div>
+    <script>
+        function initMap() {
+           var address = {lat: 59.3362609, lng: 18.0792698};
+           
+           var map = new google.maps.Map(
+           document.getElementById('main-contact__map'), {zoom: 13, center: address, styles: [{"featureType":"administrative","elementType":"all","stylers":[{"visibility":"on"},{"lightness":33}]},{"featureType":"administrative","elementType":"labels","stylers":[{"saturation":"-100"}]},{"featureType":"administrative","elementType":"labels.text","stylers":[{"gamma":"0.75"}]},{"featureType":"administrative.neighborhood","elementType":"labels.text.fill","stylers":[{"lightness":"-37"}]},{"featureType":"landscape","elementType":"geometry","stylers":[{"color":"#f9f9f9"}]},{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"saturation":"-100"},{"lightness":"40"},{"visibility":"off"}]},{"featureType":"landscape.natural","elementType":"labels.text.fill","stylers":[{"saturation":"-100"},{"lightness":"-37"}]},{"featureType":"landscape.natural","elementType":"labels.text.stroke","stylers":[{"saturation":"-100"},{"lightness":"100"},{"weight":"2"}]},{"featureType":"landscape.natural","elementType":"labels.icon","stylers":[{"saturation":"-100"}]},{"featureType":"poi","elementType":"geometry","stylers":[{"saturation":"-100"},{"lightness":"80"}]},{"featureType":"poi","elementType":"labels","stylers":[{"saturation":"-100"},{"lightness":"0"}]},{"featureType":"poi.attraction","elementType":"geometry","stylers":[{"lightness":"-4"},{"saturation":"-100"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#c5dac6"},{"visibility":"on"},{"saturation":"-95"},{"lightness":"62"}]},{"featureType":"poi.park","elementType":"labels","stylers":[{"visibility":"on"},{"lightness":20}]},{"featureType":"road","elementType":"all","stylers":[{"lightness":20}]},{"featureType":"road","elementType":"labels","stylers":[{"saturation":"-100"},{"gamma":"1.00"}]},{"featureType":"road","elementType":"labels.text","stylers":[{"gamma":"0.50"}]},{"featureType":"road","elementType":"labels.icon","stylers":[{"saturation":"-100"},{"gamma":"0.50"}]},{"featureType":"road.highway","elementType":"geometry","stylers":[{"color":"#c5c6c6"},{"saturation":"-100"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"lightness":"-13"}]},{"featureType":"road.highway","elementType":"labels.icon","stylers":[{"lightness":"0"},{"gamma":"1.09"}]},{"featureType":"road.arterial","elementType":"geometry","stylers":[{"color":"#e4d7c6"},{"saturation":"-100"},{"lightness":"47"}]},{"featureType":"road.arterial","elementType":"geometry.stroke","stylers":[{"lightness":"-12"}]},{"featureType":"road.arterial","elementType":"labels.icon","stylers":[{"saturation":"-100"}]},{"featureType":"road.local","elementType":"geometry","stylers":[{"color":"#fbfaf7"},{"lightness":"77"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"lightness":"-5"},{"saturation":"-100"}]},{"featureType":"road.local","elementType":"geometry.stroke","stylers":[{"saturation":"-100"},{"lightness":"-15"}]},{"featureType":"transit.station.airport","elementType":"geometry","stylers":[{"lightness":"47"},{"saturation":"-100"}]},{"featureType":"water","elementType":"all","stylers":[{"visibility":"on"},{"color":"#acbcc9"}]},{"featureType":"water","elementType":"geometry","stylers":[{"saturation":"53"}]},{"featureType":"water","elementType":"labels.text.fill","stylers":[{"lightness":"-42"},{"saturation":"17"}]},{"featureType":"water","elementType":"labels.text.stroke","stylers":[{"lightness":"61"}]}]});
+           
+           var marker = new google.maps.Marker({position: address, map: map});
+           }
+   </script>
+   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBDGPcoZ_hGe8Mj0fJ9W8JJ7PraprEpAog&callback=initMap"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="/src/js/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>

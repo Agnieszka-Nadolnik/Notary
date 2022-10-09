@@ -101,12 +101,39 @@
   cursor: pointer;
 }
 
+.aos-animate.bordered-table {
+  position: relative;
+  &::after {
+    content: '';
+    display: block;
+    position: absolute;
+    border-bottom: $border;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    left: -120%;
+    animation: border-animation 1s 0.5s forwards cubic-bezier(.165,.84,.44,1) ;
+  }
+}
+
 .bordered {
     padding-bottom: 30px;
-    border-bottom: $border;
+    position: relative;
 
     @media #{$size-md} {   
         padding-bottom: 40px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      border-bottom: $border;
+      bottom: 0;
+      width: 100%;
+      height: 1px;
+      left: -120%;
+      animation: border-animation 1.5s 0.5s forwards ease;
     }
 }
 

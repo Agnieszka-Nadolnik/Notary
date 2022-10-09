@@ -1,5 +1,4 @@
 .header {
- 
   .mobile-menu-container {
     position: fixed;
     background-color: #E5E5E5;
@@ -9,7 +8,10 @@
     bottom: 0;
     padding: 16px;
     transition: left 0.5s;
-
+    z-index: 1;
+    @media #{$size-lg} {
+      display: none;
+    }
     ul {
       padding: 0;
 
@@ -20,6 +22,7 @@
   }
 
   .mobile-menu-container.active {
+    transition: left 0.3s;
     left: 0;
   }
 }

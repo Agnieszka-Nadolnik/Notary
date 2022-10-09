@@ -83,6 +83,16 @@
         }
     }
 
+    .title-animation {
+        opacity: 0;
+        animation: title-animation 0.7s 0.1s forwards;
+    }
+
+    .text-animation {
+        opacity: 0;
+        animation: title-animation 0.7s 0.5s forwards;
+    }
+
     .header-info {
         display: flex;
         justify-content: space-between;
