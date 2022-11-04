@@ -45,10 +45,20 @@ body {
 .container-fluid a {
   color: #212932;
   text-decoration: none;
+  display: inline-block;
 }
 
 .container-fluid a:hover {
   color: #306145;
+  position: relative;
+}
+
+.container-fluid a:hover::after {
+  content: '';
+  position: absolute;
+  display: block;
+  border-bottom: 1px solid #306145;
+  bottom: 0;
 }
 
 .container-fluid li {
@@ -188,6 +198,55 @@ body {
   max-width: 100% !important;
 }
 
+.header .notary {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header .notary .elblem {
+  height: 60px;
+  margin-right: 10px;
+}
+
+@media (min-width: 768px) {
+  .header .notary .elblem {
+    max-height: 70px;
+  }
+}
+
+.header .notary .elblem img {
+  max-height: 100%;
+}
+
+.header .notary .name a {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header .notary .name a h1 {
+  text-align: center;
+  margin: 2px;
+}
+
+.header .notary .name h2 {
+  border-top: 1px solid #306145;
+  padding-top: 2px;
+  font-size: 14px;
+  text-transform: initial;
+}
+
 @media (min-width: 992px) {
   .header #notary {
     max-width: 80%;
@@ -202,10 +261,10 @@ body {
 
 .header .menu {
   height: 100px;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px 16px 0 16px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 16px 20px 16px;
 }
 
 .header .menu p,
@@ -234,7 +293,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  min-width: 450px;
+  min-width: 600px;
 }
 
 .header .menu .navbar ul {
@@ -250,7 +309,7 @@ body {
 }
 
 .header .menu .navbar ul li a {
-  margin-right: 5px;
+  margin-right: 10px;
 }
 
 .header .menu .phone-number {
@@ -672,7 +731,8 @@ body {
 }
 
 .text-small {
-  font-size: 14px;
+  font-size: 16px;
+  text-transform: uppercase;
   line-height: 16.8px;
   letter-spacing: 0.1px;
 }

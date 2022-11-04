@@ -2,6 +2,40 @@
     margin: 0 !important;
     max-width: 100% !important;
 
+    .notary {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .elblem {
+            height: 60px;
+            margin-right: 10px;
+            @media #{$size-md} {   
+                max-height: 70px;
+              }
+            img {
+                max-height: 100%;
+            }
+        }
+        .name {
+            a {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                h1 {
+                    text-align: center;
+                    margin: 2px;
+                }
+            }
+            h2 {
+                border-top: 1px solid #306145;
+                padding-top: 2px;
+                font-size: 14px;
+                text-transform: initial;
+            }
+        }
+    }
+
     #notary {
         @media #{$size-lg} {   
             max-width: 80%;
@@ -13,8 +47,8 @@
 
     .menu {
         height: 100px;
-        align-items: flex-start;
-        padding: 20px 16px 0 16px;
+        align-items: center;
+        padding: 20px 16px 20px 16px;
     
         p,
         h1,
@@ -40,14 +74,15 @@
 
         .navbar {
         justify-content: space-between;
-        min-width: 450px;
+        min-width: 600px;
             ul {
                 display: flex;
                 flex-direction: row;
                 flex-wrap: nowrap;
                 li {
                     a {
-                        margin-right: 5px;
+                        margin-right: 10px;
+                      
                     }
                 }
             }
