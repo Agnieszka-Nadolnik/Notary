@@ -1,9 +1,4 @@
 .table {
-    display: none;
-
-    @media #{$size-md} {
-        display: table;
-    }
     thead th {
         color: #306145;
     }
@@ -25,16 +20,8 @@
             padding-bottom: 28px !important;
           }
     }
-}
 
-.table-mobile {
-    display: table;
-    @media #{$size-lg} {
-        display: none;
-    }
-
-    span {
+    .hidden-td {
         display: block;
-        color: #878787;
     }
 }

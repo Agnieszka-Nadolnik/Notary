@@ -16,4 +16,10 @@
             margin-top: 80px;
           }
       }
+
+      .section-text {
+        @media #{$size-lg} {
+         max-width: 70%;
+        }
+      }
 }
